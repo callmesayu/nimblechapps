@@ -1,0 +1,93 @@
+.location-list {
+    text-align: start;
+    padding: 20px;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.location-card {
+    text-decoration: none;
+    color: black;
+    width: 22vw;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.location-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-info {
+    padding: 16px;
+}
+
+@media (max-width: 576px) {
+    .location-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .location-card {
+        width: 48%;
+    }
+}
+
+@media (min-width: 769px) {
+    .location-card {
+        width: 23%;
+    }
+}
+
+
+/* src/Styles/LocationDetail.css */
+.location-details-container {
+    text-align: start;
+    padding: 20px;
+}
+
+.location-details-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.location-details-card {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.location-details-info {
+    padding: 20px;
+}
+
+.location-details-info div {
+    margin-bottom: 10px;
+}
+
+.location-details-info b {
+    color: #555;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .location-details-card {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+}

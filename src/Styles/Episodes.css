@@ -1,0 +1,101 @@
+.episode-list {
+    text-align: start;
+    padding: 20px;
+}
+
+.episode-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.episode-card {
+    text-decoration: none;
+    color: #000;
+    width: 22vw;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.episode-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.episode-info {
+    padding: 16px;
+}
+
+@media (max-width: 576px) {
+    .episode-card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .episode-card {
+        width: 48%;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .episode-card {
+        width: 23%;
+    }
+}
+
+
+
+
+
+
+
+
+/* src/Styles/EpisodeDetail.css */
+
+.episode-details-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.episode-details-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.episode-details-card {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.episode-details-info {
+    padding: 20px;
+}
+
+.episode-details-info div {
+    margin-bottom: 10px;
+}
+
+.episode-details-info b {
+    color: #555;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .episode-details-card {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+}
